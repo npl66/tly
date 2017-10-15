@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tin tức</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>lay out</title>
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/slideshow-container.css">
+    <link rel="stylesheet" href="../vcss/navbar.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+
+        <header class="row">
+            <div>
+                <img class="top-banner" src="../images/c3.jpg">
+            </div>
+        </header>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-12 navbar-container">
+                <nav class="navbar navbar-inverse">
+                    <a class="navbar-brand" href="../trangchu1.html"><span class="glyphicon glyphicon-home"></span> Trang chủ</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"><span class="glyphicon glyphicon-book"></span> Sách<span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">sách hay</a></li>
+                                    <li><a href="../sach/sachmoi/sachmoi.html">Sách mới ra</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Sách sáp ra</a></li>
+                                    <li><a href="#">Nấu ăn</a></li>
+                                    <li><a href="#">Trẻ con</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Buddhism</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="active"><a href="#"> <span class="glyphicon glyphicon-list-alt"></span> Tác giả
+                                <span
+                                        class="sr-only">(current)</span></a></li>
+                            <li><a href="tintuc.html"><span class="glyphicon glyphicon-tasks"></span> Tin tức </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Liên hệ</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tên sách cần tìm">
+                            </div>
+                            <button type="submit" class="btn btn-default">Tìm kiếm sách</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <header class="row">
+            <div class="slideshow-container">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c1.jpg" style="width: 1050px;height: 300px  ">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c2.jpg" style="width: 1050px; height: 300px">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c4.jpg" style="width: 1050px; height: 300px">
+                        <div class="text"></div>
+                    </div>
+
+                    <div style="margin-top: 20px; text-align: center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
+        </header>
+    </div>
+    <div class="row">
+        <p style="font-weight: bold; font-size: 18px; margin-left: 15px">Tin tức</p>
+    </div>
+    <div class="row">
+        <article class="col-sm-9">
+            <div class="row" style="margin: 0px">
+                <div class="col-sm-5 poly-prod">
+                    <a href="tintuc_baiviet_3.html">
+                        <img src="../images/tintuc/trien_lamsach.jpg" height="200" width="350"/>
+                    </a>
+                </div>
+
+                <div class="col-sm-7 poly-prod" height="200" style="padding-left: 15px">
+                    <h3 style="font-size: inherit; text-align: left">
+                        <p style="font-weight: bold; font-size: 18px">Triển lãm hơn 1.500 đầu sách tiếng Đức tại
+                            TP Hồ Chí Minh</p></h3>
+                    <p style="text-align: justify">
+                        Lần đầu tiên một triển lãm sách tiếng Đức được tổ chức tại Việt Nam.Sẽ có hơn 1.500 đầu
+                        sách được trưng bày với tổng giá trị lên tới hơn 4 tỷ đồng.
+                        Nhân dịp kỷ niệm 27 năm ngày Quốc khánh nước Cộng hòa Liên bang Đức, Công ty Fahasa phối
+                        hợp với Viện Goethe TP.HCM tổ chức triển lãm sách Đức và khai trương gian hàng sách
+                        tiếng Đức đầu tiên tại Việt Nam.</p>
+                    <p style="text-align: right; color: #bbbbbb; font-style: italic">
+                        Ngày đăng 10/11/2017</p>
+                </div>
+            </div>
+                <div class="row" style="margin: 0px">
+                <div class="col-sm-5 poly-prod">
+                    <a href="tintuc_baiviet_2.html">
+                        <img src="../images/tintuc/e_de_sach_doat_giai_thuong.jpg" height="200" width="350"></a>
+                    </a>
+                </div>
+                <div class="col-sm-7 poly-prod" height="200" style="padding-left: 15px">
+                    <h3 style="font-size: inherit; text-align: left">
+                        <p style="font-weight: bold; font-size: 18px">Giới xuất bản trong nước vẫn e dè với
+                            sách đoạt giải thưởng</p></h3>
+                    <p style="text-align: justify">
+                        Dù rất quan tâm tới những giải thưởng lớn về sách của thế giới, nhưng các
+                        đơn vị xuất bản Việt lại rụt rè và cẩn trọng khi chọn in dòng tác phẩm
+                        này.
+                        Hàng năm, vào đầu quý ba trở đi, các giải thưởng lớn về sách rục rịch công bố tác phẩm
+                        đoạt giải hoặc tác giả chiến thắng. Giải Man Booker cho tiểu thuyết viết bằng tiếng Anh
+                        trao vào ngày 17/10 hàng năm. Giải Nobel văn học trao cho tác giả trao vào đầu tháng 10
+                        hàng năm. Giải Goncourt trao cho tác phẩm văn xuôi xuất sắc của tiếng Pháp hàng năm trao
+                        vào đầu tháng 11. Giải thưởng Sách Quốc gia Mỹ trao vào tháng 11…</p>
+                    <p style="text-align: right; color: #bbbbbb; font-style: italic">
+                        Ngày đăng 10/11/2017</p>
+                </div>
+            </div>
+
+                <div class="row" style="margin: 0px">
+                <div class="col-sm-5 poly-prod">
+                    <a href="tintuc_baiviet_1.html">
+                        <img src="../images/tintuc/giai_thuong_sach_quoc_gia_my.jpg"
+                             height="200" width="350"></a>
+                    </a>
+                </div>
+                <div class="col-sm-7 poly-prod" height="200" style="padding-left: 15px">
+                    <h3 style="font-size: inherit; text-align: left">
+                        <p style="font-weight: bold; font-size: 18px">Giải thưởng Sách quốc gia Mỹ cho văn học
+                            trẻ công bố vòng sơ khảo</p></h3>
+                    <p style="text-align: justify">
+                        Danh sách vòng sơ khảo gồm 10 tác phẩm mà các độc giả trẻ không nên bỏ qua trong năm
+                        2017.
+                        Mới đây, quỹ Sách quốc gia Mỹ đã công bố 10 cuốn sách trong hạng mục văn học trẻ được
+                        lựa chọn để tranh cử cho giải thưởng cao quý của quốc gia này.</p>
+                    <p style="text-align: right; color: #bbbbbb; font-style: italic">
+                        Ngày đăng 10/11/2017</p>
+                </div>
+            </div>
+
+                <div class="row" style="margin: 0px">
+                <div class="col-sm-5 poly-prod">
+                    <a href="tintuc_baiviet_4.html">
+                        <img src="../images/tintuc/hoi_sach_cu_hn.jpg" height="200" width="350"></a>
+                    </a>
+                </div>
+                <div class="col-sm-7 poly-prod" height="200" style="padding-left: 15px">
+                    <h3 style="font-size: inherit; text-align: left">
+                        <p style="font-weight: bold; font-size: 18px">Hội sách cũ Hà Nội tháng 9: Không gian kết
+                            nối các độc giả yêu sách cũ</p></h3>
+                    <p style="text-align: justify">
+                        Nhằm tri ân quý độc giả đã ủng hộ trong suốt thời gian qua, Hội sách cũ Hà Nội tổ chức
+                        Hội chợ sách cũ Hà Nội tháng 9/2017 tại sân Hồ Văn thuộc Văn Miếu - Quốc Tử Giám từ ngày
+                        20-24/9.
+                        Đây cũng là cơ hội cho những người sưu tầm sách như được tiếp thêm động lực </p>
+                    <p style="text-align: right; color: #bbbbbb; font-style: italic">
+                        Ngày đăng 10/11/2017</p>
+                </div>
+            </div>
+            <div class="row" style="margin: 0px">
+                <div class="col-sm-5 poly-prod">
+                    <a href="tintuc_baiviet_5.html">
+                        <img src="../images/tintuc/nha_van_nu_nobel.jpg" height="200" width="350"></a>
+                    </a>
+                </div>
+                <div class="col-sm-7 poly-prod" height="200" style="padding-left: 15px">
+                    <h3 style="font-size: inherit; text-align: left">
+                        <p style="font-weight: bold; font-size: 18px">Nữ nhà văn đoạt giải Nobel ra mắt sách mới
+                            ở tuổi 86</p></h3>
+                    <p style="text-align: justify">
+                        Toni Morrison là phụ nữ gốc Phi đầu tiên được trao giải Nobel Văn học cao quý, đồng thời
+                        cũng là một trong số ít những nhà văn Mỹ giành được cả giải thưởng Nobel và Pulitzer.
+                        Toni Morrison - tiểu thuyết gia nổi tiếng bậc nhất nước Mỹ gần đây đã phát hành cuốn
+                        sách mới mang tên The Origin of Others. Tác phẩm này ra đời sau hàng loạt thành công rực
+                        rỡ của Toni Morrion với những cái tên như Người yêu dấu, The Bluest Eye, Song of
+                        Solomon...</p>
+                    <p style="text-align: right; color: #bbbbbb; font-style: italic">
+                        Ngày đăng 10/11/2017</p>
+                </div>
+            </div>
+        </article>
+        <aside class="col-sm-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Tin tức</strong>
+                </div>
+                <div class="list-group" style="font-size: 12px">
+                    <a href="tintuc_baiviet_3.html" class="list-group-item">Triển lãm hơn 1.500 đầu sách tiếng Đức tại TP Hồ Chí Minh</a>
+                    <a href="tintuc_baiviet_2.html" class="list-group-item">Giới xuất bản trong nước vẫn e dè với sách đoạt giải thưởng</a>
+                    <a href="tintuc_baiviet_1.html" class="list-group-item">Giải thưởng Sách quốc gia Mỹ cho văn học trẻ công bố vòng sơ khảo</a>
+                    <a href="tintuc_baiviet_4.html" class="list-group-item">Hội sách cũ Hà Nội tháng 9: Không gian kết nối các độc giả yêu sách cũ</a>
+                    <a href="tintuc_baiviet_5.html" class="list-group-item">Nữ nhà văn đoạt giải Nobel ra mắt sách mới ở tuổi 86</a>
+                    <a href="tintuc_baiviet.html" class="list-group-item">'Con chim phụng cuối cùng': Người phụ nữ khắc họa bức tranh lịch sử</a>
+                </div>
+            </div>
+            <div class="panel panel-default" >
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Các danh mục sách</strong>
+                </div>
+                <div class="list-group"style="font-size: 12px" >
+                    <a href="#" class="list-group-item">Sách hay</a>
+                    <a href="../sach/sachmoi/sachmoi.html" class="list-group-item">Sách mới ra</a>
+                    <a href="#" class="list-group-item">Sách sắp xuất bản</a>
+                    <a href="#" class="list-group-item">sách nấu ăn</a>
+                    <a href="#" class="list-group-item">Sách trẻ em</a>
+                    <a href="#" class="list-group-item">Tủ sách phật giáo</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <footer class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h5>PHỤ NỮ ĐỌC SÁCH THAY ĐỔI TƯƠNG LAI - Women in Stem Project ACT &copy; 2017</h5>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

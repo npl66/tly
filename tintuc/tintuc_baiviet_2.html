@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tin tức</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>lay out</title>
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/slideshow-container.css">
+    <link rel="stylesheet" href="../vcss/navbar.css">
+    <link rel="stylesheet" href="../https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+
+        <header class="row">
+            <div>
+                <img class="top-banner" src="../images/e3.jpg">
+            </div>
+        </header>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-12 navbar-container">
+                <nav class="navbar navbar-inverse">
+                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span> Trang chủ</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"><span class="glyphicon glyphicon-book"></span> Sách<span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"> Sách</a></li>
+                                    <li><a href="#">sách bán chạy</a></li>
+                                    <li><a href="#9">Sách mới ra</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Sách sáp ra</a></li>
+                                    <li><a href="#">Nấu ăn</a></li>
+                                    <li><a href="#">Trẻ con</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Buddhism</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="active"><a href="#"> <span class="glyphicon glyphicon-list-alt"></span> Tác giả
+                                <span
+                                        class="sr-only">(current)</span></a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Tin tức </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Liên hệ</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tên sách cần tìm">
+                            </div>
+                            <button type="submit" class="btn btn-default">Tìm kiếm sách</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <header class="row">
+            <div class="slideshow-container">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c1.jpg" style="width: 1050px;height: 300px  ">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c2.jpg" style="width: 1050px; height: 300px">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c4.jpg" style="width: 1050px; height: 300px">
+                        <div class="text"></div>
+                    </div>
+
+                    <div style="margin-top: 20px; text-align: center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
+        </header>
+    </div>
+    <div class="row">
+        <article class="col-sm-9">
+            <div class="jumbostron">
+                <div class="row">
+                    <h3 style="text-align: center">
+                        <p style="font-weight: bold; font-size: 18px">Giới xuất bản trong nước vẫn e dè với sách đoạt giải thưởng</p>
+                        <img src="../images/tintuc/e_de_sach_doat_giai_thuong.jpg" height="200" width="400"/>
+
+                    </h3>
+                    <br>
+                    <p style="text-align: justify; margin-left: 15px">
+                        Dù rất quan tâm tới những giải thưởng lớn về sách của thế giới, nhưng các đơn vị xuất bản Việt lại rụt rè và cẩn trọng khi chọn in dòng tác phẩm này.
+                        Hàng năm, vào đầu quý ba trở đi, các giải thưởng lớn về sách rục rịch công bố tác phẩm đoạt giải hoặc tác giả chiến thắng. Giải Man Booker cho tiểu thuyết viết bằng tiếng Anh trao vào ngày 17/10 hàng năm. Giải Nobel văn học trao cho tác giả trao vào đầu tháng 10 hàng năm. Giải Goncourt trao cho tác phẩm văn xuôi xuất sắc của tiếng Pháp hàng năm trao vào đầu tháng 11. Giải thưởng Sách Quốc gia Mỹ trao vào tháng 11…
+
+                        Để em khỏi lạc trong khu phố - sách của tác giả Nobel Văn học 2014 Patrick Modiano phát hành tại Việt Nam.
+                        Bám sát từng vòng loại giải thưởng
+                        Tất cả các giải thưởng được công bố vừa là dịp tôn vinh tác giả, tác phẩm, đồng thời là những gợi ý cho giới xuất bản khai thác bản quyền. “Đoạt giải thưởng”, nhất là những giải thưởng danh giá, tầm cỡ quốc tế là một bảo chứng tốt nhất cho chất lượng nội dung sách.
+                        Bởi vậy, các đơn vị xuất bản Việt Nam cũng không bỏ qua những thông tin về giải thưởng này. Họ theo dõi sát sao từng diễn biến của các giải thưởng. Nhắc tới sách đoạt giải thưởng quốc tế xuất bản ở Việt Nam, giới làm sách đều nói tới Nhã Nam, bởi đơn vị này khai thác nhiều tác phẩm, tác giả đoạt giải.
+                        Ông Nguyễn Xuân Minh – Trưởng bộ phận bản quyền công ty Nhã Nam – cho biết, đơn vị này lúc nào cũng theo dõi các giải thưởng lớn của thế giới. Họ bắt đầu để ý tới các giải thưởng ngay từ vòng đề cử, xem cuốn sách gì, tác giả nào đang có tên trong danh sách đề cử của giải (longlist). Qua từng giai đoạn, các giải thưởng vào vòng bầu chọn, với danh sách tác giả tác phẩm rút gọn hơn (shortlist), cuối cùng tới công bố người chiến thắng.
+                        Công ty này quan tâm tới nhiều giải thưởng như: Booker, Man Booker, các giải văn học châu Á như Asian Book, giải Goncourt của văn chương Pháp, Nobel Văn học. Thậm chí giải thưởng của từng dòng văn học cũng được để ý, như giải RITA dành cho văn học lãng mạn, hay giải thưởng dành cho văn học trinh thám… Các giải thưởng do độc giả bình chọn của một số tổ chức như Goodreads cũng nằm trong “tầm ngắm” của Nhã Nam.
+                        Cũng bởi theo dõi sát sao, nên Nhã Nam luôn đưa được các cuốn sách đạt giải cao về thị trường Việt. Chẳng hạn, mới đây, họ đã mua bản quyền của cuốn A Horse walks into a Bar đạt giải Man Booker quốc tế hồi tháng 6. Thậm chí có những tác giả, tác phẩm từ khi chưa đoạt giải thưởng quốc tế, sách của họ đã được đơn vị này mua bản quyền và xuất bản tại Việt Nam.
+
+                        Sách của tác giả Nobel Văn học 2014 phát hành tại Việt Nam.
+                        Một vài trường hợp tiêu biểu như tác giả Patrick Modiano nhận giải Nobel Văn học 2014, nhưng sách của ông đã có bản tiếng Việt từ trước đó khá lâu. Tác giả Alice Munro dành giải Nobel 2013, giải Man Booker Quốc tế 2009 cũng có sách do Nhã Nam xuất bản từ trước khi được giải.
+                        Giống Nhã Nam, nhiều công ty xuất bản, phát hành trong nước cũng luôn để mắt các giải thưởng sách quốc tế. Ông Minh Tuấn – Giám đốc công ty sách Quảng Văn – cũng là người theo dõi sát các giải thưởng sách từ khi còn là đề cử những tác giả tác phẩm tiềm năng tới khi công bố giải.  Năm 2017, đơn vị này đã phát hành cuốn Ánh sáng vô hình (tác giả Anthony Doerr) – tác phẩm đoạt giải Pulitzer 2015.
+                        Không hợp tiêu chí số đông, sách đạt giải thưởng bị ngần ngại
+                        Tuy có nội dung tốt, song sách đạt giải hoặc của các tác giả được tôn vinh vẫn khiến giới xuất bản trong nước e dè.
+                        Bản thân đơn vị chuyên “săn” sách đạt giải thưởng như Nhã Nam cũng xuất bản có chọn lọc đối với các cuốn đạt giải thưởng quốc tế. “Chúng tôi theo dõi các giải thưởng, nếu cuốn sách phù hợp với thị trường, phù hợp với tiêu chí, mục đích xuất bản của công ty thì mới mua bản quyền. Chúng tôi luôn theo dõi các giải thưởng, nhưng có những cuốn đạt giải cao cũng không mua. Ngược lại có những cuốn không đạt giải, nhưng phù hợp với độc giả trong nước, chủ đề dễ tiếp nhận thì vẫn được mua bản quyền” – ông Xuân Minh nói.
+                        Theo trưởng phòng khai thác bản quyền Nhã Nam, sách đạt giải thưởng lớn của nước ngoài, khi mua bản quyền xuất bản tiếng Việt có lượng phát hành bình thường. “Sách này thuộc dòng văn học đương đại hoặc văn chương kinh điển nên khá kén độc giả. Việc tiêu thụ nó ở mức độ chấp nhận được”.
+                        Việc thương thảo bản quyền với tác phẩm, tác giả trong danh sách đề cử hoặc đạt giải không quá khó khăn với các đơn vị xuất bản trong nước. Thỉnh thoảng, sẽ có một cuộc cạnh tranh nhỏ giữa vài đơn vị xuất bản trong nước để có được quyền phát hành bản tiếng Việt. Lý do chính khiến các đơn vị xuất bản e dè với sách đạt giải thưởng, bởi thị hiếu của số đông công chúng trong nước.
+
+                        Sách Ánh sáng vô hình đoạt giải Pulitzer, nhưng lượng phát hành ở mức "tiêu thụ được".
+                        Giám đốc công ty Sách Quảng Văn nói bộ phận thẩm định của công ty có tìm hiểu, tham khảo về những cuốn sách đạt giải thưởng nhưng họ luôn lựa chọn tìm ra những sản phẩm sao cho phát hành ở mức đảm bảo không bị lỗ. “Những sách này kén độc giả lắm. Nội dung sách vừa hàn lâm, lại hướng tới một đối tượng độc giả hẹp. Thêm nữa, sách đạt giải thường có kỹ thuật viết khá phức tạp, nhiều ẩn dụ… nên có ít người theo dõi kiểu sách này” – ông Minh Tuấn nói.
+                        Theo tiết lộ của người đứng đầu công ty sách Quảng Văn, cuốn Ánh sáng vô hình mà họ đạt giải có tiền bản quyền cao hơn, mức đầu tư marketing cao gấp đôi so với những cuốn sách khác, nhưng lượng phát hành lại chỉ ở mức “tiêu thụ được”.
+                        Ông Lê Thanh Huy – Giám đốc công ty sách Bách Việt – nhận định thị trường xuất bản không nhiều đơn vị đủ tự tin để chạy theo các giải thưởng sách. Ông phân tích, xuất bản sách mới đạt giải thưởng có rất nhiều rủi ro. Trước hết, rủi ro lớn nhất mà đơn vị xuất bản phải đối mặt là về kinh doanh, dòng sách này kén người đọc. Những cuốn sách giải trí, thời thượng sẽ được số đông tiếp nhận nhiều hơn.
+                        “Kinh doanh sách đạt giải, sách kinh điển không được tốt cho lắm. Làm những cuốn đó để cho nó thêm phần sang trọng” – ông Lê Thanh Huy, Giám đốc công ty Bách Việt.
+                        Thứ hai, sách đạt giải theo ông Huy là những cuốn sách khó, nên muốn làm phải đầu tư về con người. Cần một đội ngũ chuyên gia mới có thể giúp tư vấn, thẩm định bản thảo. Mỗi lần Bách Việt muốn mua bản thảo cuốn sách nào từng được giải đều phải nhờ chuyên gia bên ngoài công ty về lĩnh vực đó góp ý, thẩm định.
+                        Sau khâu thẩm định, tới việc dịch loại sách này cũng là một kỳ công. Các tác phẩm đạt giải thưởng lớn, thuộc dòng kinh điển thường được tác giả viết với cấu trúc, ẩn ý khó, bản thân người sử dụng ngôn ngữ gốc như Anh, Mỹ đọc còn khó hiểu, huống hồ phải chuyển ngữ sang tiếng Việt. “Họ viết bằng những hình thức, ngôn ngữ khó đọc, đó có thể là điều mà tác giả, giới hàn lâm tâm đắc, nhưng chưa chắc thị trường đã tâm đắc”.
+
+                        Xuất bản những cuốn đã đạt giải từ lâu, được định danh là cách để Bách Việt có được những ấn phẩm tốt, sang trọng.
+                        Với những cuốn khó như thế, các công ty sách thường chọn dịch giả đã thành danh để chuyển ngữ. Ông Lê Thanh Huy kể, có những cuốn của tác giả William Faulkner (tác giả đoạt giải Nobel Văn học năm 1949), công ty sách gần như tuyệt vọng trong việc tìm dịch giả. Bản thảo đã qua tay ba dịch giả có tiếng, nhưng sau một thời gian họ đều trả lại vì những lý do khác nhau. Mãi sau đó công ty mới tìm được người hoàn thiện bản dịch.
+                        Để có được những cuốn sách tốt về nội dung mà không rơi vào tình trạng thâm hụt vốn, công ty sách Bách Việt đưa ra giải pháp. Đơn vị này không chạy theo những tác giả, tác phẩm mới được giải, mà tìm kiếm bản thảo từ những tác phẩm đã nhận giải từ lâu, đó là những tác phẩm mà giá trị, vị thế đã ổn định trong dư luận.
+                        Ông Lê Thanh Huy nói: "Sách mới đạt giải còn mới mẻ, nhiều khi vẫn còn tranh cãi. Bởi thế chúng tôi không chủ trương đi vào hướng đó. Bách Việt không muốn đặt cược vào những thứ rủi ro mà làm các cuốn có tác giả đã xuất hiện ở Việt Nam rồi, hoặc được biết nhiều rồi, thậm chí đã in trước đó rồi. Làm như vậy không bị cạnh tranh nhiều, mua bản quyền dễ hơn, giá vừa phải hơn."
+                        Đơn vị này đã xuất bản nhiều cuốn sách từng đạt giải thưởng, tác giả từng được tôn vinh trong quá khứ như Âm thanh cuồng nộ, Cọ hoang (William Faulkner), Người Dublin (James Joyce), Người tình Hoa Bắc (Maguerite Duras)…
+
+
+                    </p>
+
+                </div>
+            </div>
+        </article>
+        <aside class="col-sm-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Tin tức</strong>
+                </div>
+                <div class="list-group" style="font-size: 12px">
+                    <a href="tintuc_baiviet_3.html" class="list-group-item">Triển lãm hơn 1.500 đầu sách tiếng Đức tại TP Hồ Chí Minh</a>
+                    <a href="tintuc_baiviet_2.html" class="list-group-item">Giới xuất bản trong nước vẫn e dè với sách đoạt giải thưởng</a>
+                    <a href="tintuc_baiviet_1.html" class="list-group-item">Giải thưởng Sách quốc gia Mỹ cho văn học trẻ công bố vòng sơ khảo</a>
+                    <a href="tintuc_baiviet_4.html" class="list-group-item">Hội sách cũ Hà Nội tháng 9: Không gian kết nối các độc giả yêu sách cũ</a>
+                    <a href="tintuc_baiviet_5.html" class="list-group-item">Nữ nhà văn đoạt giải Nobel ra mắt sách mới ở tuổi 86</a>
+                    <a href="tintuc_baiviet.html" class="list-group-item">'Con chim phụng cuối cùng': Người phụ nữ khắc họa bức tranh lịch sử</a>
+                </div>
+            </div>
+            <div class="panel panel-default" >
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Các danh mục sách</strong>
+                </div>
+                <div class="list-group"style="font-size: 12px" >
+                    <a href="#" class="list-group-item">Sách bán chạy</a>
+                    <a href="#" class="list-group-item">Sách hay trong tháng</a>
+                    <a href="#" class="list-group-item">Sách sắp xuất bản</a>
+                    <a href="#" class="list-group-item">sách nấu ăn</a>
+                    <a href="#" class="list-group-item">Sách trẻ em</a>
+                    <a href="#" class="list-group-item">Tủ sách phật giáo</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <footer class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h5>PHỤ NỮ ĐỌC SÁCH THAY ĐỔI TƯƠNG LAI - Women in Stem Project ACT &copy; 2017</h5>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

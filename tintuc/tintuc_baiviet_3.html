@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tin tức</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>lay out</title>
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/slideshow-container.css">
+    <link rel="stylesheet" href="../vcss/navbar.css">
+    <link rel="stylesheet" href="../https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+
+        <header class="row">
+            <div>
+                <img class="top-banner" src="../images/e3.jpg">
+            </div>
+        </header>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-12 navbar-container">
+                <nav class="navbar navbar-inverse">
+                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span> Trang chủ</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"><span class="glyphicon glyphicon-book"></span> Sách<span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"> Sách</a></li>
+                                    <li><a href="#">sách bán chạy</a></li>
+                                    <li><a href="#9">Sách mới ra</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Sách sáp ra</a></li>
+                                    <li><a href="#">Nấu ăn</a></li>
+                                    <li><a href="#">Trẻ con</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Buddhism</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="active"><a href="#"> <span class="glyphicon glyphicon-list-alt"></span> Tác giả
+                                <span
+                                        class="sr-only">(current)</span></a></li>
+                            <li><a href="tintuc.html"><span class="glyphicon glyphicon-tasks"></span> Tin tức </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Liên hệ</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tên sách cần tìm">
+                            </div>
+                            <button type="submit" class="btn btn-default">Tìm kiếm sách</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <header class="row">
+            <div class="slideshow-container">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c1.jpg" style="width: 1050px;height: 300px  ">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c2.jpg" style="width: 1050px; height: 300px">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c4.jpg" style="width: 1050px; height: 300px">
+                        <div class="text"></div>
+                    </div>
+
+                    <div style="margin-top: 20px; text-align: center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
+        </header>
+    </div>
+    <div class="row">
+        <article class="col-sm-9">
+            <div class="jumbostron">
+                <div class="row">
+                    <h3 style="text-align: center">
+                        <p style="font-weight: bold; font-size: 18px">Triển lãm hơn 1.500 đầu sách tiếng Đức ở TP Hồ Chí Minh</p>
+                        <img src="../images/tintuc/trien_lamsach.jpg" height="200" width="400"/>
+
+                    </h3>
+                    <br>
+                    <p style="text-align: justify; margin-left: 15px">
+                        Nhân dịp kỷ niệm 27 năm ngày Quốc khánh nước Cộng hòa Liên bang Đức, Công ty Fahasa phối hợp với Viện Goethe TP.HCM tổ chức triển lãm sách Đức và khai trương gian hàng sách tiếng Đức đầu tiên tại Việt Nam. Triển lãm diễn ra từ 29/9 8/10 tại Nhà sách Nguyễn Huệ, quận 1, TP.HCM.
+
+                        Trong đợt triển lãm sẽ có hơn 1.500 tựa sách tương ứng 10.000 bản sách được trưng bày, với tổng giá trị lên đến 4 tỷ đồng. Đến với triển lãm, bạn đọc sẽ tìm được sách ở nhiều thể loại khác nhau như sách giáo trình, từ điển, sách thiếu nhi, văn học...
+
+                        Đây là những cuốn sách đã được tuyển chọn, phù hợp với bạn đọc tiếng Đức ở mọi lứa tuổi, từ cấp độ từ A1 đến C2 (theo tiêu chuẩn chung về ngôn ngữ của Cộng đồng châu Âu).
+
+                        Trien lam hon 1.500 dau sach tieng Duc o TP.HCM hinh anh 1
+                        Nhà sách Nguyễn Huệ thu hút đông đảo độc giả đến mua sách mỗi ngày.
+                        Đại diện Fahasa cho biết sách tiếng Đức đều được công ty nhập khẩu trực tiếp từ các nhà xuất bản Đức như Cornelsen Verlagskontor GmbH, Hueber Verlag GmbH & Co. KG, Ernst Klett Sprachen GmbH, Langenscheidt GmbH & Co. KG, Verlagsgruppe Random House GmbH và dtv Verlagsgesellschaft mbH. Trong đó nhà xuất bản Cornelsen, Hueber và Klett chuyên về sách giáo trình; Langenscheidt chuyên về sách từ điển; Random House và Dtv chuyên về sách thiếu nhi, sách văn học, sách tham khảo…
+
+                        Đặc biệt, trong suốt thời gian diễn ra triển lãm, ban tổ chức sẽ dành mức chiết khấu ưu đãi 10% giá bìa cho tất cả các loại sách được trưng bày. Đặc biệt, khi độc giả đến với triển lãm tại nhà sách Nguyễn Huệ, còn có cơ hội tham gia buổi học luyện âm tiếng Đức do viện Goethe TP.HCM hướng dẫn.
+
+                        Sau thời gian triển lãm, gian hàng sách tiếng Đức sẽ được Fahasa duy trì hoạt động các đầu sách tiếng Đức tại nhà sách. Đơn vị này cũng dự kiến mở gian hàng sách tiếng Đức tại Hà Nội trong thời gian tới.
+                        <br>Nguồn Zing
+                    </p>
+
+                </div>
+            </div>
+        </article>
+        <aside class="col-sm-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Tin tức</strong>
+                </div>
+                <div class="list-group" style="font-size: 12px">
+                    <a href="tintuc_baiviet_3.html" class="list-group-item">Triển lãm hơn 1.500 đầu sách tiếng Đức tại TP Hồ Chí Minh</a>
+                    <a href="tintuc_baiviet_2.html" class="list-group-item">Giới xuất bản trong nước vẫn e dè với sách đoạt giải thưởng</a>
+                    <a href="tintuc_baiviet_1.html" class="list-group-item">Giải thưởng Sách quốc gia Mỹ cho văn học trẻ công bố vòng sơ khảo</a>
+                    <a href="tintuc_baiviet_4.html" class="list-group-item">Hội sách cũ Hà Nội tháng 9: Không gian kết nối các độc giả yêu sách cũ</a>
+                    <a href="tintuc_baiviet_5.html" class="list-group-item">Nữ nhà văn đoạt giải Nobel ra mắt sách mới ở tuổi 86</a>
+                    <a href="tintuc_baiviet.html" class="list-group-item">'Con chim phụng cuối cùng': Người phụ nữ khắc họa bức tranh lịch sử</a>
+                </div>
+            </div>
+            <div class="panel panel-default" >
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Các danh mục sách</strong>
+                </div>
+                <div class="list-group"style="font-size: 12px" >
+                    <a href="#" class="list-group-item">Sách hay</a>
+                    <a href="#" class="list-group-item">Sách mới ra</a>
+                    <a href="#" class="list-group-item">Sách sắp xuất bản</a>
+                    <a href="#" class="list-group-item">sách nấu ăn</a>
+                    <a href="#" class="list-group-item">Sách trẻ em</a>
+                    <a href="#" class="list-group-item">Tủ sách phật giáo</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <footer class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h5>PHỤ NỮ ĐỌC SÁCH THAY ĐỔI TƯƠNG LAI - Women in Stem Project ACT &copy; 2017</h5>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

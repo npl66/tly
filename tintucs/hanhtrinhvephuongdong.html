@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tin tức</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>lay out</title>
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/slideshow-container.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+
+        <header class="row">
+            <div>
+                <img class="top-banner" src="../images/c3.jpg">
+            </div>
+        </header>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-12 navbar-container">
+                <nav class="navbar navbar-inverse">
+                    <a class="navbar-brand" href="../trangchu1.html"><span class="glyphicon glyphicon-home"></span> Trang chủ</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"><span class="glyphicon glyphicon-book"></span> Sách<span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">sách hay</a></li>
+                                    <li><a href="#9">Sách mới ra</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Sách sáp ra</a></li>
+                                    <li><a href="#">Nấu ăn</a></li>
+                                    <li><a href="#">Trẻ con</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Buddhism</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="active"><a href="#"> <span class="glyphicon glyphicon-list-alt"></span> Tác giả
+                                <span
+                                        class="sr-only">(current)</span></a></li>
+                            <li><a href="tintuc_baiviet.html"><span class="glyphicon glyphicon-tasks"></span> Tin tức </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Liên hệ</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tên sách cần tìm">
+                            </div>
+                            <button type="submit" class="btn btn-default">Tìm kiếm sách</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <header class="row">
+            <div class="slideshow-container">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c1.jpg" style="width: 1050px;height: 300px  ">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c2.jpg" style="width: 1050px; height: 300px">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="../images/c4.jpg" style="width: 1050px; height: 300px">
+                        <div class="text"></div>
+                    </div>
+
+                    <div style="margin-top: 20px; text-align: center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
+        </header>
+    </div>
+    
+    <div class="row">
+        <article class="col-sm-9">
+            <div class="jumbostron">
+                <div class="row">
+                    <h3 style="text-align: center">
+                        <p style="font-weight: bold; font-size: 18px">Hành trình về phương đông-T Spalding</p>
+                        <img src="../images/hanhtrinhvephuongdong-bia-0.jpg" height="400" width="350"/>
+                    </h3>
+                    <br>
+                    <p style="text-align: justify; margin-left: 15px">
+                        “Hành trình về phương Đông” kể về những trải nghiệm của một đoàn khoa học gồm các chuyên gia hàng đầu của Hội Khoa Học Hoàng Gia Anh được cử sang Ấn Độ nghiên cứu về huyền học và những khả năng siêu nhiên của con người. Suốt hai năm trời rong ruổi khắp các đền chùa Ấn Độ, diện kiến nhiều pháp thuật, nhiều cảnh mê tín dị đoan, thậm chí lừa đảo…của nhiều pháp sư, đạo sĩ…họ được tiếp xúc với những vị chân tu thông thái sống ẩn dật ở thị trấn hay trên rặng Tuyết Sơn. Nhờ thế, họ được chứng kiến, trải nghiệm, hiểu biết sâu sắc về các khoa học cổ xưa và bí truyền của văn hóa Ấn Độ như yoga, thiền định, thuật chiêm tin, các phép dưỡng sinh và chữa bệnh, những kiến thức về nhân duyên, nghiệp báo, luật nhân quả, cõi sống và cõi chết…
+
+                        Cuốn sách này là một phần trong bộ hồi ký nổi tiếng của giáo sư Blair T. Spalding (1857 – 1953). Nguyên tác “Life and Teaching of the Masters of the Far East” (xuất bản năm 1935) có tất cả sáu quyển, ghi nhận đầy đủ về cuộc hành trình gay go nhưng lý thú và tràn đầy sự huyền bí ở Ấn Độ, Tây Tạng, Trung Hoa và Ba Tư.
+
+                        Ba quyển đầu ghi lại những cuộc thám hiểm của phái đoàn gồm các nhà khoa học hàng đầu của Hoàng gia Anh đi từ Anh quốc sang Ấn Độ, các cuộc gặp gỡ giữa phái đoàn và những vị thầy tâm linh sống ở châu Á và ở dãy Hy Mã Lạp Sơn. Ba quyển sau là những ghi nhận riêng của giáo sư Spalding về các cuộc hành trình, sự trao đổi kiến thức giữa phái đoàn và các vị thầy tâm linh, cùng bản tường trình của phái đoàn đã đưa đến những cuộc tranh luận sôi nổi. Cuối cùng thì ba người trong phái đoàn đã trở lại Ấn Độ sống đời ẩn sĩ.
+
+                        Hồi ký của giáo sư Spalding là một công trình nghiên cứu nghiêm túc với nhiều dữ kiện được đoàn ghi nhận đầy đủ một cách khoa học, và cho đến nay vẫn còn nhiều độc giả hâm mộ, nhiệt liệt tán thưởng các quyển hồi ký này.
+
+                    </p>
+
+                </div>
+            </div>
+        </article>
+        <aside class="col-sm-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Tin tức</strong>
+                </div>
+                <div class="list-group" style="font-size: 12px">
+                    <a href="tintuc_baiviet_3.html" class="list-group-item">Triển lãm hơn 1.500 đầu sách tiếng Đức tại TP Hồ Chí Minh</a>
+                    <a href="tintuc_baiviet_2.html" class="list-group-item">Giới xuất bản trong nước vẫn e dè với sách đoạt giải thưởng</a>
+                    <a href="tintuc_baiviet_1.html" class="list-group-item">Giải thưởng Sách quốc gia Mỹ cho văn học trẻ công bố vòng sơ khảo</a>
+                    <a href="tintuc_baiviet_4.html" class="list-group-item">Hội sách cũ Hà Nội tháng 9: Không gian kết nối các độc giả yêu sách cũ</a>
+                    <a href="tintuc_baiviet_5.html" class="list-group-item">Nữ nhà văn đoạt giải Nobel ra mắt sách mới ở tuổi 86</a>
+                    <a href="tintuc_baiviet.html" class="list-group-item">'Con chim phụng cuối cùng': Người phụ nữ khắc họa bức tranh lịch sử</a>
+                </div>
+            </div>
+            <div class="panel panel-default" >
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Các danh mục sách</strong>
+                </div>
+                <div class="list-group"style="font-size: 12px" >
+                    <a href="#" class="list-group-item">Sách bán chạy</a>
+                    <a href="#" class="list-group-item">Sách hay trong tháng</a>
+                    <a href="#" class="list-group-item">Sách sắp xuất bản</a>
+                    <a href="#" class="list-group-item">sách nấu ăn</a>
+                    <a href="#" class="list-group-item">Sách trẻ em</a>
+                    <a href="#" class="list-group-item">Tủ sách phật giáo</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="row">
+        <p style="font-style: inherit;text-align: justify; margin-left: 22px">
+            Tin tức liên quan
+        </p>
+        <ul>
+            <li><a href="tintucs/tintuc_baiviet_1.html" class="list-group-dot">Giải thưởng Sách quốc gia Mỹ cho văn học trẻ công bố vòng sơ khảo</a></li>
+            <li><a href="tintucs/tintuc_baiviet_2.html" class="list-group-dot">Giới xuất bản trong nước vẫn e dè với sách đoạt giải thưởng</a></li>
+            <li><a href="tintucs/tintuc_baiviet_3.html" class="list-group-dot">Giới xuất bản trong nước vẫn e dè với sách đoạt giải thưởng</a></li>
+            <li><a href="tintucs/tintuc_baiviet_4.html" class="list-group-dot">Hội sách cũ Hà Nội tháng 9: Không gian kết nối các độc giả yêu sách cũ</a></li>
+            <li><a href="tintucs/tintuc_baiviet_5.html" class="list-group-dot">Giới xuất bản trong nước vẫn e dè với sách đoạt giải thưởng</a></li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <footer class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h5>PHỤ NỮ ĐỌC SÁCH THAY ĐỔI TƯƠNG LAI - Women in Stem Project ACT &copy; 2017</h5>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
