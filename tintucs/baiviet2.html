@@ -2,211 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trang chu</title>
+    <title>Tin tức</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>lay out</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/slideshow-container.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/slideshow-container.css">
+    <link rel="stylesheet" href="../https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
 
 </head>
+<body>
+<div class="container">
+    <div class="jumbotron">
 
-<div class="container" style="height:auto">
-    <div class="jumbotron" style="background-color: peachpuff">
-    <header class="row">
-        <div style="background-color: lightgreen ">
-            <img class="top-banner" ; src="images/e3.jpg">
-        </div>
-    </header>
-
-<!-- Brand and toggle get grouped for better mobile display -->
-
-    <div class="row">
-        <div class="col-md-12 navbar-container">
-            <nav class="navbar navbar-inverse">
-                <a class="navbar-brand" href="http://localhost:63342/Project.act/trangchu.html?_ijt=2noaq2oaq93ms2ifrjsl6aq2hf"><span class="glyphicon glyphicon-home"></span> Trang chủ</a>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                               aria-expanded="false"><span class="glyphicon glyphicon-book"></span> Sách<span
-                                    class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#"> Sách</a></li>
-                                <li><a href="#">sách bán chạy</a></li>
-                                <li><a href="http://localhost:63342/Project.act/SACHMOI.html?_ijt=ec1q8sicltdskcf74864riiqd9">Sách mới ra</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Sách sáp ra</a></li>
-                                <li><a href="#">Nấu ăn</a></li>
-                                <li><a href="#">Trẻ con</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Buddhism</a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-                        </li>
-
-                        <li class="active"><a href="#"> <span class="glyphicon glyphicon-list-alt"></span> Tác giả <span
-                                class="sr-only">(current)</span></a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Tin tức </a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Hỏi đáp</a></li>
-                    </ul>
-                    <form class="navbar-form navbar-right">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Tìm kiếm sách</button>
-                    </form>
-                </div>
-        </nav>
-    </div>
-    </div>
-
-    <header class="row">
-        <div class="slideshow-container" style="width: auto">
-            <div class= "slideshow-container">
-
-                <div class="mySlides fade">
-                    <div class="numbertext"></div>
-                    <img src="images/c1.jpg" style="width: 1050px;height: 300px  ">
-                    <div class="text"></div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext"></div>
-                    <img src="images/c2.jpg" style="width: 1050px; height: 300px">
-                    <div class="text"></div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext"></div>
-                    <img src="images/c4.jpg" style="width: 1050px; height: 300px">
-                    <div class="text"></div>
-                </div>
-
-                <div style="text-align:center">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
+        <header class="row">
+            <div>
+                <img class="top-banner" src="../images/c3.jpg">
             </div>
+        </header>
 
-            <script>
-                var slideIndex = 0;
-                showSlides();
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-12 navbar-container">
+                <nav class="navbar navbar-inverse">
+                    <a class="navbar-brand" href="../trangchu.html"><span class="glyphicon glyphicon-home"></span> Trang chủ</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"><span class="glyphicon glyphicon-book"></span> Sách<span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Sách hay</a></li>
+                                    <li><a href="../sach/sachmoi/sachmoi.html">Sách mới ra</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Sách sắp ra</a></li>
+                                    <li><a href="#">Nấu ăn</a></li>
+                                    <li><a href="#">Trẻ con</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Buddhism</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
 
-                function showSlides() {
-                    var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    var dots = document.getElementsByClassName("dot");
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    slideIndex++;
-                    if (slideIndex > slides.length) {slideIndex = 1}
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex-1].style.display = "block";
-                    dots[slideIndex-1].className += " active";
-                    setTimeout(showSlides, 5000); // Change image every 2 seconds
-                }
-            </script>
+                            <li><a href="#"> <span class="glyphicon glyphicon-list-alt"></span> Tác giả
+                                <span
+                                        class="sr-only">(current)</span></a></li>
+                            <li><a href="tintuc.html"><span class="glyphicon glyphicon-tasks"></span> Tin tức </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Liên hệ</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tên sách cần tìm">
+                            </div>
+                            <button type="submit" class="btn btn-default">Tìm kiếm sách</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </header>
-    </div>
-</div>
-        <div class="container">
-        <div class="jumbotron" style="background-color: peachpuff">
-        <article class="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h3 style="font-size: inherit; text-align: center">
-                            <p style="font-weight: bold; font-size: 18px">Những điều ít biết đằng sau nghề sách</p>
 
-                            <img src="images/d6.jpg" height="200" width="400"/>
+        <div class="row">
+            <article class="col-sm-9">
+                <div class="jumbostron">
+                    <div class="row">
+                        <h3 style="text-align: center">
+                            <p style="font-weight: bold; font-size: 18px">NHỮNG ĐIỀU ÍT BIẾT ĐẰNG SAU TRANG SÁCH</p>
+                            <img src="../images/d6.jpg" height="200" width="400"/>
                         </h3>
                         <br>
 
-                        <p style="text-align: justify; margin-left: 15px">
-                            Những câu chuyện thú vị về nghề in và thiết kế bìa sách được các khách mời chia sẻ trong chương trình The sofa 7 với chủ đề "Câu chuyện thiết kế và in ấn" vào chiều ngày 27/11.
-                            Câu chuyện thiết kế và in ấn là chủ đề 5 trong chuỗi chương trình The sofa do Nhã Nam tổ chức - xoay quanh các bước tạo nên một cuốn sách hoàn chỉnh. Khách mời chia sẻ về chủ đề in ấn và thiết kế là ông Nguyễn Văn Dòng  - Chủ tịch Hiệp hội In Việt Nam, anh Tạ Quốc Kỳ Nam - thiết kế, biên tập của Nhã Nam.
+                        <p style=" font-size:12px; font-style: italic; margin-left: 15px"> Ngày đăng 10/11/2017</p>
+                        <p style="font-size:12px;text-align: justify; margin-left: 15px">
+                            Những câu chuyện thú vị về nghề in và thiết kế bìa sách được các khách mời chia sẻ trong chương trình The sofa 7 với chủ đề "Câu chuyện thiết kế và in ấn" vào chiều ngày 27/11. Câu chuyện thiết kế và in ấn là chủ đề 5 trong chuỗi chương trình The sofa do Nhã Nam tổ chức - xoay quanh các bước tạo nên một cuốn sách hoàn chỉnh. Khách mời chia sẻ về chủ đề in ấn và thiết kế là ông Nguyễn Văn Dòng - Chủ tịch Hiệp hội In Việt Nam, anh Tạ Quốc Kỳ Nam - thiết kế, biên tập của Nhã Nam. Theo anh Kỳ Nam, ngày nay, nhu cầu thẩm mỹ của người đọc càng cao nên các nhà xuất bản, phát hành không chỉ phải đem tới những cuốn sách hay mà còn phải đảm bảo tính mỹ thuật. Bìa sách chính là ấn tượng đầu tiên thu hút độc giả về cuốn sách. Ở đây, vai trò của người thiết kế như khoác một chiếc áo mới cho cuốn sách. Anh cho biết: "Mỗi khi thiết kế, tôi thường đặt ra 3 yếu tố hàng đầu cho bìa sách của mình là đúng - đẹp - lạ. Mỗi bìa sách là một câu chuyện thú vị khác nhau". Để có bìa sách ưng ý, Kỳ Nam phải tìm đọc sách của nhân vật, tìm những hướng mới về thiết kế và dồn cả tâm huyết của mình vào tác phẩm. Khó khăn, áp lực của nghề chính theo Kỳ Nam chính là ý kiến trái chiều với tác giả và khán giả. "Nhiều bìa sách tôi rất tâm đắc nhưng tác giả lại không thích bởi tư duy khác nhau, thẩm mỹ khác nhau. Đó là chưa kể bị khán giả phản ứng với chính đưa con tinh thần mình chăm chút nhất". Kỷ niệm đáng nhớ của họa trẻ trong năm 2016 chính là bìa Truyện Kiều mới do NXB Thế giới liên kết với Nhã Nam phát hành. Bìa sách không đi vào lối mòn khi nhắc đến nàng Kiều nhưng lại bị dư luận lên án là dung tục, không đúng thuần phong mỹ tục. Nói về ngành in, ông Nguyễn Văn Dòng, Chủ tịch Hội In Việt Nam chia sẻ những kiến thức về kỹ thuật in và ngành in trước những thách thức về sự phát triển internet. Trước ý kiến cho rằng ngành in có thể bị thu hẹp vì báo in giảm sút, ông Dòng khẳng định: "Ngành in không thể chết. Nếu không in báo thì chúng tôi in những hàng hóa thương mại khác. Trong khi đó, ngành xuất bản liên tục tăng trưởng về số lượng bản sách".
 
-                            Theo anh Kỳ Nam, ngày nay, nhu cầu thẩm mỹ của người đọc càng cao nên các nhà xuất bản, phát hành không chỉ phải đem tới những cuốn sách hay mà còn phải đảm bảo tính mỹ thuật. Bìa sách chính là ấn tượng đầu tiên thu hút độc giả về cuốn sách. Ở đây, vai trò của người thiết kế như khoác một chiếc áo mới cho cuốn sách.
-
-
-
-                            Anh cho biết: "Mỗi khi thiết kế, tôi thường đặt ra 3 yếu tố hàng đầu cho bìa sách của mình là đúng - đẹp - lạ. Mỗi bìa sách là một câu chuyện thú vị khác nhau".
-
-                            Để có bìa sách ưng ý, Kỳ Nam phải tìm đọc sách của nhân vật, tìm những hướng mới về thiết kế và dồn cả tâm huyết của mình vào tác phẩm.
-
-                            Khó khăn, áp lực của nghề chính theo Kỳ Nam chính là ý kiến trái chiều với tác giả và khán giả. "Nhiều bìa sách tôi rất tâm đắc nhưng tác giả lại không thích bởi tư duy khác nhau, thẩm mỹ khác nhau. Đó là chưa kể bị khán giả phản ứng với chính đưa con tinh thần mình chăm chút nhất".
-
-                            Kỷ niệm đáng nhớ của họa trẻ trong năm 2016 chính là bìa Truyện Kiều mới do NXB Thế giới liên kết với Nhã Nam phát hành. Bìa sách không đi vào lối mòn khi nhắc đến nàng Kiều nhưng lại bị dư luận lên án là dung tục, không đúng thuần phong mỹ tục.
-
-                            Nói về ngành in, ông Nguyễn Văn Dòng, Chủ tịch Hội In Việt Nam chia sẻ những kiến thức về kỹ thuật in và ngành in trước những thách thức về sự phát triển internet.
-
-                            Trước ý kiến cho rằng ngành in có thể bị thu hẹp vì báo in giảm sút, ông Dòng khẳng định: "Ngành in không thể chết. Nếu không in báo thì chúng tôi in những hàng hóa thương mại khác. Trong khi đó, ngành xuất bản liên tục tăng trưởng về số lượng bản sách".<br><br>
-                            Nguồn Nhã nam
                         </p>
-                    </div>
-                    <div class="row">
-                        <aside class="col-sm-3">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <span class="glyphicon glyphicon-th-list"></span>
-                                    <strong>Tin tuc </strong>
-                                </div>
-                            </div>
-                                <div class="list-group">
+                        <p style="font-size:12px;text-align: right"> Nguồn Nhã Nam</p>
 
-                                    <a href="http://localhost:63342/Project.act/tintuc2.html?_ijt=fcortkbqof5ketb89776ae4o3t" class="list-group-item">Con chim phụng cuối cùng</a>
-                                    <a href="http://localhost:63342/Project.act/baiviet2.html?_ijt=lotbh3f1ntppdomkduau8tson3" class="list-group-item">Những điều ít biết đằng sau nghề sách</a>
-                                    <a href="#" class="list-group-item">Gặp Joe</a>
-
-                                </div>
-                                <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <span class="glyphicon glyphicon-th-list"></span>
-                                    <strong>Các danh mục sách</strong>
-                                </div>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">Sách bán chạy</a>
-                                    <a href="#" class="list-group-item">Sách hay trong tháng</a>
-                                    <a href="#" class="list-group-item">Sách sắp xuất bản</a>
-                                    <a href="#" class="list-group-item">sách nấu ăn</a>
-                                    <a href="#" class="list-group-item">Sách trẻ em</a>
-                                    <a href="#" class="list-group-item">Tủ sách phật giáo</a>
-                                </div>
-                            </div>
-                        </aside>
                     </div>
                 </div>
-        </article>
+            </article>
+            <aside class="col-sm-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                        <strong>Tin tức</strong>
+                    </div>
+                    <div class="list-group" style="font-size: 12px">
+                        <a href="tintuc_baiviet_3.html" class="list-group-item">Triển lãm hơn 1.500 đầu sách tiếng Đức tại TP Hồ Chí Minh</a>
+                        <a href="tintuc_baiviet_2.html" class="list-group-item">Giới xuất bản trong nước vẫn e dè với sách đoạt giải thưởng</a>
+                        <a href="tintuc_baiviet_1.html" class="list-group-item">Giải thưởng Sách quốc gia Mỹ cho văn học trẻ công bố vòng sơ khảo</a>
+                        <a href="tintuc_baiviet_4.html" class="list-group-item">Hội sách cũ Hà Nội tháng 9: Không gian kết nối các độc giả yêu sách cũ</a>
+                        <a href="tintuc_baiviet_5.html" class="list-group-item">Nữ nhà văn đoạt giải Nobel ra mắt sách mới ở tuổi 86</a>
+                        <a href="tintuc_baiviet.html" class="list-group-item">'Con chim phụng cuối cùng': Người phụ nữ khắc họa bức tranh lịch sử</a>
+                    </div>
+                </div>
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                        <strong>Các danh mục sách</strong>
+                    </div>
+                    <div class="list-group"style="font-size: 12px" >
+                        <a href="#" class="list-group-item">Sách hay</a>
+                        <a href="../sach/sachmoi/sachmoi.html" class="list-group-item">Sách mới ra</a>
+                        <a href="#" class="list-group-item">Sách sắp xuất bản</a>
+                        <a href="#" class="list-group-item">Sách nấu ăn</a>
+                        <a href="#" class="list-group-item">Sách trẻ em</a>
+                        <a href="#" class="list-group-item">Tủ sách phật giáo</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
 
-    <p class="row">
-    <p style="text-align: justify; margin-left: 24px">
-      Tin tức liên quan
-        </p>
-    <ul>
-        <li><a href="http://localhost:63342/Project.act/hanhtrinhvephuongdong.html?_ijt=8ibk3prbktkb6mto88onc0uaju" class="list-group-dot">Hành trình về phương đông</a></li>
-        <li><a href="http://localhost:63342/Project.act/candam.html?_ijt=up6ue2t40qr2r44q8586t6avf4" class="list-group-dot">Can đảm</a></li>
-    </ul>
-    </p>
-
-        <footer class="panel panel-default">
-            <div class="panel-heading text-center">
-                <h5>PHỤ NỮ ĐỌC SÁCH THAY ĐỔI TƯƠNG LAI - Women in Stem Project ACT &copy; 2017</h5>
+        <div class="row">
+            <div class="container">
+                <footer class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h5>PHỤ NỮ ĐỌC SÁCH THAY ĐỔI TƯƠNG LAI - Women in Stem Project ACT &copy; 2017</h5>
+                    </div>
+                </footer>
             </div>
-        </footer>
+        </div>
     </div>
-</div>
 
 </body>
 </html>
